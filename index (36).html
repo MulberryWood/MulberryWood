@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<a href="index.html">Link naar mijn indexpagina</a>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulberry Wood – Inschrijving & Route</title>
+  <style>
+  body {
+  font-family: Arial, sans-serif;
+  background: url('images/achtergrond.jpg') center center fixed no-repeat;
+  background-size: contain; /* 🔹 ipv cover, zodat hout kleiner zichtbaar is */
+  background-repeat: repeat; /* herhalen als er ruimte overblijft */
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: rgba(245, 241, 230, 0.95);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    text-align: left;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+
+  .brand-text h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #2e7d32;
+  }
+
+  .brand-text p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #444;
+  }
+
+  h1, h2, h3 {
+    color: #2e7d32;
+    margin-bottom: 10px;
+  }
+
+  .prijzen-blok {
+    border: 2px solid #2e7d32;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f9f9f4;
+    max-width: 300px;
+  }
+
+  .prijzen-blok p {
+    margin: 8px 0;
+    font-size: 16px;
+  }
+
+  .prijzen-blok .betaling {
+    margin-top: 12px;
+    color: #009000;
+    font-weight: bold;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+
+
+.photo-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: nowrap; /* 🔹 altijd naast elkaar */
+}
+
+.photo {
+  flex: 1;
+  max-width: 32%; /* 🔹 zodat er 3 naast elkaar passen */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+  a.button {
+    display: inline-block;
+    background: #2e7d32;
+    color: white;
+    font-weight: bold;
+    padding: 14px 24px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 15px 0;
+    transition: background 0.3s;
+  }
+
+  a.button:hover {
+    background: #256128;
+  }
+
+  form {
+    margin-top: 20px;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    background: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+
+  button:hover {
+    background: #256128;
+  }
+
+  .route-photo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+
+  .route-photo img {
+    max-width: 250px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+  #dankbericht {
+    display: none;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-top: 15px;
+  }
+
+  /* ✅ Responsive aanpassingen voor mobiel */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+      margin: 20px;
+    }
+
+    .header {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .logo {
+      margin: 0 0 15px 0;
+      width: 100px;
+    }
+
+    .photo-row {
+      flex-direction: column;
+    }
+
+    .photo {
+      max-width: 100%;
+    }
+
+    .route-photo {
+      justify-content: center;
+    }
+
+    .prijzen-blok {
+      max-width: 100%;
+    }
+
+    button {
+      font-size: 18px;
+      padding: 16px;
+    }
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <img src="images/logo.png" alt="Mulberry Wood Logo" class="logo">
+      <div class="brand-text">
+        <h1>Brandhout verkoop</h1>
+        <p>een student initiatief</p>
+      </div>
+    </div>
+
+    <h1>Mulberry Wood</h1>
+    <p>Brandhout van topkwaliteit bij <strong>Mijnbouwweg 2, 
+    Amersfoort</strong>Bekijk hieronder onze info over de service, 
+    soort brandhout, prijzen, schrijf je in of plan je route.</p>
+
+    <h2>Service</h2>
+    <p>Het brandhout kan alleen op afspraak
+    worden opgehaald bij ons terrein in Amersfoort, aan de Mijnbouwweg 2.
+    Ophalen kan met de auto of met een aanhanger.
+    Zorg dat je een afspraak maakt zodat we je snel en goed kunnen helpen.</p>
+
+    <h2>Soort brandhout</h2>
+    <p>Wij leveren uitsluitend hardhout van hoge kwaliteit:
+   <strong> eik, es en beuken</strong>
+    Het hout is hard gedroogd op een natuurgedroogde manier
+    en heeft een vochtigheidspercentage van slechts <strong>18–20%</strong>. 
+    Perfect geschikt voor kachels, haarden en buitenvuren.</p>
+
+    <h3>Prijzen</h3>
+    <div class="prijzen-blok">
+      <p>1 kuub: <strong>€150,-</strong></p>
+      <p>½ kuub: <strong>€80,-</strong></p>
+      <p>Aanhanger: <strong>+ €15,-</strong> <br><small>(incl. bigbag of pallets)</small></p>
+      <p class="betaling">💶 Betaling uitsluitend <strong>contant</strong> bij het laden.</p>
+    </div>
+
+    <!-- Foto’s -->
+    <div class="photo-row">
+      <img src="images/houtstapel.jpg" alt="Houtstapel" class="photo">
+      <img src="images/sfeerfoto2.jpg" alt="Sfeerfoto 2" class="photo">
+      <img src="images/sfeerfoto3.jpg" alt="Sfeerfoto 3" class="photo">
+    </div>
+
+    <h3>Route</h3>      
+    <p>Klik om direct je route naar onze locatie te bekijken:</p>
+    <a class="button" target="_blank" href="https://www.google.com/maps/dir/?api=1&destination=Mijnbouwweg+2,+Amersfoort">Bekijk Route via Google Maps</a>
+
+    <div class="route-photo">
+      <img src="images/route.jpg" alt="Route foto">
+    </div>
+
+    <h3>Inschrijven</h3>
+    <p>Vul je gegevens in om je aan te melden:</p>
+    <form id="inschrijf-form">
+      <label>Naam:</label>
+      <input type="text" id="naam" name="naam" required>
+      
+      <label>Telefoonnummer:</label>
+      <input type="tel" id="telefoon" name="telefoon" required>
+      
+      <label>Hoeveelheid hout:</label>
+      <select id="hoeveelheid" name="hoeveelheid" required>
+        <option value="">-- Kies hoeveelheid --</option>
+        <option value="½ kuub">½ kuub</option>
+        <option value="1 kuub">1 kuub</option>
+        <option value="2 kuub">2 kuub</option>
+        <option value="3 kuub">3 kuub</option>
+      </select>
+
+      <label>Aanhanger:</label>
+      <select id="aanhanger" name="aanhanger" required>
+        <option value="">-- Kies optie --</option>
+        <option value="Ja">Ja</option>
+        <option value="Nee">Nee</option>
+      </select>
+      
+      <label>Datum:</label>
+      <select id="datum" name="datum" required>
+        <option value="">-- Kies een datum --</option>
+        <option value="24 september 2025">24 september 2025</option>
+        <option value="25 september 2025">25 september 2025</option>
+        <option value="26 september 2025">26 september 2025</option>
+      </select>
+      
+      <label>Tijd:</label>
+      <input type="time" id="tijd" name="tijd" required>
+      
+      <button type="submit">Verstuur inschrijving</button>
+    </form>
+
+    <p id="dankbericht">✅ Dank u wel voor uw zending!</p>
+  </div>
+
+  <script>
+    document.getElementById("inschrijf-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      let naam = document.getElementById("naam").value;
+      let telefoon = document.getElementById("telefoon").value;
+      let datum = document.getElementById("datum").value;
+      let tijd = document.getElementById("tijd").value;
+      let hoeveelheid = document.getElementById("hoeveelheid").value;
+      let aanhanger = document.getElementById("aanhanger").value;
+
+      let hoeveelheidTekst = hoeveelheid;
+      if (aanhanger === "Ja") {
+        hoeveelheidTekst += " met aanhanger";
+      } else {
+        hoeveelheidTekst += " zonder aanhanger";
+      }
+
+      let bericht = `Ik wil hout kopen. Ik ben ${naam}, dit is mijn telefoonnummer ${telefoon}. Ik wil ${hoeveelheidTekst} en kan langskomen op ${datum} om ${tijd} uur.`;
+
+      let url = `https://wa.me/31617469146?text=${encodeURIComponent(bericht)}`;
+      window.open(url, "_blank");
+
+      this.style.display = "none";
+      document.getElementById("dankbericht").style.display = "block";
+    });
+  </script>
+</body>
+</html>
