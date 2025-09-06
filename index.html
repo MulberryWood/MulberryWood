@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<a href="index.html">Link naar mijn indexpagina</a>
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +9,8 @@
   body {
   font-family: Arial, sans-serif;
   background: url('images/achtergrond.jpg') center center fixed no-repeat;
-  background-size: cover;
+  background-size: contain; /* 🔹 ipv cover, zodat hout kleiner zichtbaar is */
+  background-repeat: repeat; /* herhalen als er ruimte overblijft */
   color: #111;
   margin: 0;
   padding: 0;
@@ -79,19 +81,23 @@
     margin-bottom: 20px;
   }
 
-  .photo-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-    margin: 20px 0;
-  }
 
-  .photo {
-    flex: 1;
-    max-width: 30%;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  }
+
+.photo-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: nowrap; /* 🔹 altijd naast elkaar */
+}
+
+.photo {
+  flex: 1;
+  max-width: 32%; /* 🔹 zodat er 3 naast elkaar passen */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 
   a.button {
     display: inline-block;
@@ -217,13 +223,22 @@
     </div>
 
     <h1>Mulberry Wood</h1>
-    <p>Brandhout van topkwaliteit bij <strong>Mijnbouwweg 2, Amersfoort</strong>...</p>
+    <p>Brandhout van topkwaliteit bij <strong>Mijnbouwweg 2, 
+    Amersfoort</strong>Bekijk hieronder onze info over de service, 
+    soort brandhout, prijzen, schrijf je in of plan je route.</p>
 
     <h2>Service</h2>
-    <p>Het brandhout kan alleen op afspraak worden opgehaald...</p>
+    <p>Het brandhout kan alleen op afspraak
+    worden opgehaald bij ons terrein in Amersfoort, aan de Mijnbouwweg 2.
+    Ophalen kan met de auto of met een aanhanger.
+    Zorg dat je een afspraak maakt zodat we je snel en goed kunnen helpen.</p>
 
     <h2>Soort brandhout</h2>
-    <p>Wij leveren uitsluitend hardhout van hoge kwaliteit...</p>
+    <p>Wij leveren uitsluitend hardhout van hoge kwaliteit:
+   <strong> eik, es en beuken</strong>
+    Het hout is hard gedroogd op een natuurgedroogde manier
+    en heeft een vochtigheidspercentage van slechts <strong>18–20%</strong>. 
+    Perfect geschikt voor kachels, haarden en buitenvuren.</p>
 
     <h3>Prijzen</h3>
     <div class="prijzen-blok">
@@ -319,3 +334,4 @@
   </script>
 </body>
 </html>
+
