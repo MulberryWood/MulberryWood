@@ -310,10 +310,8 @@
       let hoeveelheidTekst = hoeveelheid;
 
 
-      let bericht = `Naam: ${naam},
-                    telefoonnummer ${telefoon}.
-                    Ik wil ${hoeveelheidTekst} 
-                    Datum: ${datum} om ${tijd} uur.`;
+      let bericht = let bericht = `Naam: ${naam}\nTelefoonnummer: ${telefoon}\nIk wil: ${hoeveelheidTekst}\nDatum: ${datum}\nTijd: ${tijd} uur`;
+
 
       let url = `https://wa.me/31617469146?text=${encodeURIComponent(bericht)}`;
       window.open(url, "_blank");
