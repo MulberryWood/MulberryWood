@@ -19,6 +19,7 @@
 .adres {
   color: #2e7d32;   /* groen */
   font-weight: bold; /* dik gedrukt */
+  font-size: 22px;   /* 🔹 maak groter (pas dit aan naar wens) */
 }
 
   .container {
@@ -56,10 +57,30 @@
     color: #444;
   }
 
-  h1, h2, h3 {
-    color: #2e7d32;
-    margin-bottom: 10px;
-  }
+  h1 {
+  font-size: 40px; /* grootste kop */
+  color: #2e7d32;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 32px; /* middel */
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 32px; /* kleinste */
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-size: 32px; /* kleinste */
+  color: #2e7d32;
+  margin-bottom: 8px;
+}
+
 
   .prijzen-blok {
     border: 2px solid #2e7d32;
@@ -236,13 +257,13 @@
    
    
     <p>Het hout kan <strong>alleen op afspraak</strong> worden afgehaald op ons terrein in <br>
-    <span class="adres">(Amersfoort, Mijnbouwweg 2)</span>.
+    <span class="adres">AMERSFOORT, MIJNBOUWWEG 2</span. <br>
     Afhalen kan met auto of met een aanhanger.
     Maak een afspraak, zodat we je snel en goed kunnen helpen.</p>
 
    
 
-    <h3>PRIJS</h3>
+    <h2>PRIJS</h2>
     <div class="prijzen-blok">
       <p><strong>€150,-/m³</strong></p>
       <p class="betaling">Betaling uitsluitend <strong>contant</strong> bij het laden.</p>
@@ -250,9 +271,7 @@
 
     <!-- Foto’s -->
     <div class="photo-row">
-      <img src="images/houtstapel.jpg" alt="Houtstapel" class="photo">
       <img src="images/sfeerfoto2.jpg" alt="Sfeerfoto 2" class="photo">
-      <img src="images/sfeerfoto3.jpg" alt="Sfeerfoto 3" class="photo">
     </div>
 
     <h3>ROUTE</h3>      
@@ -263,7 +282,7 @@
       <img src="images/route.jpg" alt="Route foto">
     </div>
 
-    <h3>AFSPREKEN</h3>
+    <h4>AFSPREKEN</h4>
     <p>Vul je gegevens in om je aan te melden:</p>
     <form id="inschrijf-form">
       <label>Naam:</label>
@@ -283,13 +302,16 @@
       <label>Datum:</label>
       <select id="datum" name="datum" required>
         <option value="">-- Kies een datum --</option>
-        <option value="24 september 2025">24 september 2025</option>
-        <option value="25 september 2025">25 september 2025</option>
-        <option value="26 september 2025">26 september 2025</option>
+        <option value="14 september 2025">14 september 2025</option>
+        <option value="3 oktober 2025">3 oktober 2025</option>
+        <option value="11 oktober 2025">11 oktober 2025</option>
+        <option value="12 oktober2025">12 oktober 2025</option>
       </select>
       
       <label>Tijd:</label>
-      <input type="time" id="tijd" name="tijd" required>
+     <label>Tijd:</label>
+    <input type="time" id="tijd" name="tijd" required min="14:00" max="17:00">
+
       
       <button type="submit">Verstuur inschrijving</button>
     </form>
@@ -313,7 +335,7 @@
       let bericht =`Naam: ${naam}\nTelefoonnummer: ${telefoon}\nIk wil: ${hoeveelheidTekst}\nDatum: ${datum}\nTijd: ${tijd} uur`;
 
 
-      let url = `https://wa.me/31617469146?text=${encodeURIComponent(bericht)}`;
+      let url = `https://wa.me/31629273653?text=${encodeURIComponent(bericht)}`;
       window.open(url, "_blank");
 
       this.style.display = "none";
